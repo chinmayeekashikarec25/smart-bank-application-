@@ -21,14 +21,16 @@ body {
 
     background: white;
 
-    padding: 30px;
+    width: 420px;
 
-    width: 400px;
+    padding: 30px;
 
     border-radius: 10px;
 
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
+/* Logo */
 
 .logo {
 
@@ -39,6 +41,8 @@ body {
     margin: 0 auto 15px auto;
 }
 
+/* Heading */
+
 h1 {
 
     text-align: center;
@@ -48,6 +52,8 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Labels */
+
 label {
 
     display: block;
@@ -56,6 +62,8 @@ label {
 
     font-weight: bold;
 }
+
+/* Inputs */
 
 input,
 select {
@@ -72,16 +80,17 @@ select {
 
     box-sizing: border-box;
 }
+
+/* Signature */
+
 .signature-section {
 
-    margin-top: 30px;
-
-    text-align: left;
+    margin-top: 20px;
 }
 
 .signature-box {
 
-    width: 200px;
+    width: 220px;
 
     height: 60px;
 
@@ -89,6 +98,8 @@ select {
 
     margin-top: 10px;
 }
+
+/* Buttons */
 
 button {
 
@@ -116,20 +127,20 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Preview */
+
 #previewBox {
 
     margin-top: 20px;
 
     padding: 15px;
 
-    background-color: #fff3cd;
-
-    border: 1px solid #ffeeba;
-
     border-radius: 5px;
+
+    background-color: #fff3cd;
 }
 
-
+/* Output */
 
 #output {
 
@@ -137,7 +148,7 @@ button:hover {
 
     padding: 15px;
 
-    background-color: #e8f5e9;
-
     border-radius: 5px;
+
+    background-color: #e8f5e9;
 }

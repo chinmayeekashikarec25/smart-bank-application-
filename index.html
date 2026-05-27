@@ -25,15 +25,33 @@
 
         <!-- Heading -->
 
-        <h1>Smart Bank Application</h1>
+        <h1 id="mainHeading">Smart Bank Application</h1>
 
         <!-- Form -->
 
         <form id="bankForm">
 
+            <!-- Language -->
+
+            <label for="language" id="languageLabel">
+                Preferred Language
+            </label>
+
+            <select id="language" onchange="changeLanguage()">
+
+                <option value="english">English</option>
+
+                <option value="hindi">Hindi</option>
+
+                <option value="kannada">Kannada</option>
+
+            </select>
+
             <!-- Customer Name -->
 
-            <label for="name">Customer Name</label>
+            <label for="name" id="nameLabel">
+                Customer Name
+            </label>
 
             <input
                 type="text"
@@ -44,7 +62,9 @@
 
             <!-- Account Number -->
 
-            <label for="accountNumber">Account Number</label>
+            <label for="accountNumber" id="accountLabel">
+                Account Number
+            </label>
 
             <input
                 type="text"
@@ -55,9 +75,11 @@
                 required
             >
 
-            <!-- Transaction Type -->
+            <!-- Transaction -->
 
-            <label for="transaction">Transaction Type</label>
+            <label for="transaction" id="transactionLabel">
+                Transaction Type
+            </label>
 
             <select id="transaction" required>
 
@@ -71,7 +93,9 @@
 
             <!-- Amount -->
 
-            <label for="amount">Amount</label>
+            <label for="amount" id="amountLabel">
+                Amount
+            </label>
 
             <input
                 type="number"
@@ -80,11 +104,13 @@
                 required
             >
 
-            <!-- Customer Signature -->
+            <!-- Signature -->
 
             <div class="signature-section">
 
-                <p><strong>Customer Signature</strong></p>
+                <p id="signatureText">
+                    <strong>Customer Signature</strong>
+                </p>
 
                 <div class="signature-box"></div>
 
@@ -92,17 +118,17 @@
 
             <!-- Buttons -->
 
-            <button type="button" onclick="showPreview()">
+            <button type="button" onclick="showPreview()" id="previewBtn">
                 Preview
             </button>
 
-            <button type="submit">
+            <button type="submit" id="submitBtn">
                 Submit
             </button>
 
         </form>
 
-        <!-- Preview Box -->
+        <!-- Preview -->
 
         <div id="previewBox"></div>
 
